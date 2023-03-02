@@ -1,0 +1,129 @@
+body{
+    height: 100vh;
+    background: url(Assets/Desktop2.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container{
+    background-color: rgb(251, 252, 253);
+    border: solid 2px rgb(94, 94, 94);
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.4);
+    height: 70%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -12%);
+
+}
+.container div form{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(251, 252, 253);
+    border: solid 2px rgb(94, 94, 94);
+    border-radius: 10px;
+    width: 450px;
+
+}
+.container div form input{
+    height: 30px;
+    width: 380px;
+    border-radius: 5px;
+    
+}
+input[type="text"]::placeholder {
+    text-align: center;
+  }
+  
+.addTodo{
+    height: 36px;
+    margin-left: 5px;
+    padding: 0 20px;
+    border-radius: 5px;
+    color:rgb(94, 94, 94);
+    background-color:rgb(238, 238, 238);
+}
+.addTodo:hover{
+color:white;
+background-color:rgb(94, 94, 94);
+}
+.content{
+    display: flex;
+    align-content: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+input[type="checkbox"]{
+    margin-top: 9px;
+    margin-right: 1px;
+    height: 30px;
+    width: 30px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+  }
+.liste{
+    background-color: white;
+    border: solid 1px rgb(0, 70, 38);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    min-width: 380px;
+    max-width: 500px;
+    margin: 5px 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.liste:active{
+    background-color: green;
+}
+.deleteB{
+    margin-top: 5px;
+    height: 40px;
+    background-color: rgb(243, 171, 171);
+    border: solid 1px gray;
+    border-radius: 8px;
+    color: white;
+}
+.deleteB:hover{
+    background-color: red;
+}
+
+.all-liste{
+    margin-right: 40px;
+}
+  
+.done{
+    background-color: green;
+}
+.check-all{
+    margin: 15px;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(253, 232, 192);
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+.check-all:hover{
+    background-color: orange;
+    color: white;
+}
